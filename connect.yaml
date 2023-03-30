@@ -1,27 +1,7 @@
 deployAs:
-  - name: service
+  - name: trustelev8service
     applicationType: service
-    endpoint: /service
-    configurationType:
-      CTP_PROJECT_KEY: secret
-      CTP_CLIENT_ID: secret
-      CTP_CLIENT_SECRET: secret
-      CTP_SCOPE: secret
-      CTP_REGION : standard
-  - name: job
-    applicationType: job
-    endpoint: /job
-    properties:
-      schedule: "*/5 * * * *"
-    configurationType:
-      CTP_PROJECT_KEY: secret
-      CTP_CLIENT_ID: secret
-      CTP_CLIENT_SECRET: secret
-      CTP_SCOPE: secret
-      CTP_REGION : standard
-  - name: event
-    applicationType: event
-    endpoint: /event
+    endpoint: /trustelev8
     configurationType:
       CTP_PROJECT_KEY: secret
       CTP_CLIENT_ID: secret
