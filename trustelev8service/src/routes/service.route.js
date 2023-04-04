@@ -4,7 +4,7 @@ import { post } from '../controllers/service.controller.js';
 // Create the router for our app
 const serviceRouter = Router();
 
-serviceRouter.post('/callback', async (req, res, next) => {
+serviceRouter.post('/', async (req, res, next) => {
   try {
     await post(req, res);
     next();
