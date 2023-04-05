@@ -19,7 +19,6 @@ export const post = async (request, response) => {
     );
   } catch (error) {
     if (error instanceof Error) {
-      console.error(error.message)
       throw new CustomError(500, error.message);
     }
   }
