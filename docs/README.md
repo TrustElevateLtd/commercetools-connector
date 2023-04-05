@@ -1,1 +1,1 @@
-This connector `trustelev8service` accepts callbacks with age eligibility receipt from TrustElev8 server and updates `eligable` custom field in the Cart object to true or false, allowing the user to proceed to checkout after successful age verification.
+This connector `trustelev8service` accepts callbacks with age eligibility receipt from TrustElev8 server and updates `eligible` custom field in the Cart object to true or false, allowing the user to proceed to checkout after successful age verification.
