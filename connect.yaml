@@ -2,9 +2,22 @@ deployAs:
   - name: trustelev8service
     applicationType: service
     endpoint: /trustelev8
-    configurationType:
-      CTP_PROJECT_KEY: secret
-      CTP_CLIENT_ID: secret
-      CTP_CLIENT_SECRET: secret
-      CTP_SCOPE: secret
-      CTP_REGION : standard
+    configuration:
+      standardConfiguration:
+        - key: CTP_PROJECT_KEY
+          description: Project key of the commercetools Composable Commerce Project
+          required: true
+          default: 'default-key'
+        - key: CTP_REGION
+          description: Region where the commercetools Composable Commerce Project is hosted
+          required: true
+      securedConfiguration:
+        - key: CTP_CLIENT_ID
+          description: client_id of an API Client for the commercetools Composable Commerce Project
+          required: true
+        - key: CTP_CLIENT_SECRET
+          description: secret of an API Client for the commercetools Composable Commerce Project
+          required: true
+        - key: CTP_SCOPE
+          description: scope of an API Client for the commercetools Composable Commerce Project
+
